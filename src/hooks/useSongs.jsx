@@ -4,6 +4,7 @@ import { getToken, searchSongs, fetchPopularSongs } from "../services/spotifySer
 export const useSongs = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [songs, setSongs] = useState([]);
+  
 
   const fetchSongs = async (query) => {
       const tokenResponse = await getToken();
